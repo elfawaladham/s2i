@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/s2i/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S2 International</title>
+    <!-- Force Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'scroll': 'scroll 20s linear infinite',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/s2i/assets/index-DJy6l65I.js"></script>
+    <link rel="stylesheet" crossorigin href="/s2i/assets/index-BTmva2Kj.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
